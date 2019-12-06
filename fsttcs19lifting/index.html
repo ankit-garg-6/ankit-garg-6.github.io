@@ -9,7 +9,7 @@
   <title>Extension complexity and lifting theorems (FSTTCS 2019 Workshop)</title>
   <meta name="description" content="Communication Complexity">
 
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
   <link rel="canonical" href="https://ankit-garg-6.github.io/fsttcs19lifting/">
   <link rel="alternate" type="application/rss+xml" title="Ankit Garg" href="https://ankit-garg-6.github.io/feed.xml" />
 </head>
@@ -22,7 +22,7 @@
       <div class="wrapper">
         <h1 id="extension-complexity-and-lifting-theorems">Extension complexity and lifting theorems</h1>
 
-<p><a href="https://www.fsttcs.org.in/2019/">FSTTCS2019</a> Workshop. December 14, 2019.
+<p><a href="https://www.fsttcs.org.in/2019/">FSTTCS2019</a> Workshop. December 14, 2019. Location: <strong>  Institute Lecture Hall Complex (LHC) </strong> LH 101, IIT Bombay. More information about how to reach the venue can be found <a href="https://www.cse.iitb.ac.in/~fsttcs2019/#venue"> here </a>.
 
 <p><strong>Organizers:</strong> <a href="https://ankit-garg-6.github.io/">Ankit Garg</a>, <a href="https://raghumeka.github.io/">Raghu Meka</a>, <a href="https://www.cs.toronto.edu/~toni/">Toniann Pitassi</a>, <a href="https://www.cwi.nl/people/makrand-sinha">Makrand Sinha</a></p>
 
@@ -38,8 +38,6 @@
 
 <h2 id="schedule">Schedule</h2>
 
-<h3 id="morning-tutorials">Morning Tutorials</h3>
-
 <table>
   <thead>
     <tr>
@@ -51,137 +49,115 @@
   </thead>
   <tbody>
     <tr>
-      <td>8:40–8:45</td>
+      <td>8:50–9:00</td>
       <td> </td>
       <td>Welcome &amp; overview</td>
       <td> </td>
     </tr>
     <tr>
-      <td>8:45–9:50</td>
-      <td><a href="garga@microsoft.com">Ankit Garg</a></td>
-      <td><a href="#tutorials-ankit-garg-rafael-oliveira-michael-walter">A panorama of scaling and its applications</a></td>
-      <td><span class="new"><a href="slides-ankit.pdf">[pdf]</a></span></td>
+      <td>9:00–10:00</td>
+      <td><a href="https://www.tcs.tifr.res.in/~arkadev/">Arkadev Chattopadhyay</a></td>
+      <td><a href="#arkadev">Lifting Theorems via Hitting Distributions and Discrepancy</a></td>
     </tr>
     <tr>
-      <td>10:00–10:30</td>
-      <td><a href="http://www.cs.utoronto.ca/~rafael/">Rafael Oliveira</a></td>
-      <td><a href="#tutorials-ankit-garg-rafael-oliveira-michael-walter">How to analyse a scaling algorithm?</a></td>
-      <td><span class="new"><a href="slides-rafael.pdf">[pdf]</a></span></td>
+      <td>10:00–11:00</td>
+      <td><a href="http://www.csc.kth.se/~vinyals/">Marc Vinyals</a></td>
+      <td><a href="#marc">Lifting applied to proof complexity</a></td>
     </tr>
     <tr>
-      <td>10:30–11:00</td>
+      <td>11:00–11:30</td>
       <td> </td>
-      <td>break</td>
+      <td>Tea/Coffee Break</td>
       <td> </td>
     </tr>
     <tr>
-      <td>11:00–12:00</td>
-      <td><a href="https://staff.fnwi.uva.nl/m.walter/">Michael Walter</a></td>
-      <td><a href="#tutorials-ankit-garg-rafael-oliveira-michael-walter">Non-commutative optimization and scaling</a></td>
-      <td><span class="new"><a href="notes-michael.pdf">[pdf]</a></span></td>
+      <td>11:30–12:30</td>
+      <td><a href="https://pritishkamath.github.io/">Pritish Kamath</a></td>
+      <td><a href="#pritish">Monotone Circuit Lower Bounds via Query-to-Communication lifting</a></td>
+    </tr>	
+    <tr>
+      <td>12:30–14:00</td>
+      <td> </td>
+      <td>Lunch Break</td>
+      <td> </td>
     </tr>
+    <tr>
+      <td>14:00–15:00</td>
+      <td><a href="https://www.cwi.nl/people/makrand-sinha">Makrand Sinha</a></td>
+      <td><a href="#makrand">Lower Bounds for Extension Complexity</a></td>
+    </tr>
+    <tr>
+      <td>15:00–16:00</td>
+      <td><a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a></td>
+      <td><a href="#pravesh"></a></td>
+    </tr>
+    <tr>
+      <td>16:00–16:30</td>
+      <td> </td>
+      <td>Tea/Coffee Break</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>16:30–17:30</td>
+      <td><a href="https://www.tcs.tifr.res.in/~suhail-sherif/">Suhail Sherif</a></td>
+      <td><a href="#suhail">Lifting with XOR</a></td>
+    </tr>
+    <tr>
   </tbody>
 </table>
 
 <p />
 
-<h3 id="afternoon-workshop">Afternoon Workshop</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>      Time      </th>
-      <th>          Speaker          </th>
-      <th>Title</th>
-      <th> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>14:00–14:45</td>
-      <td><a href="http://www.cs.utoronto.ca/~rafael/">Rafael Oliveira</a></td>
-      <td><a href="#geodesically-convex-optimization-and-applications-to-operator-scaling-and-invariant-theory-rafael-oliveira">Geodesically Convex Optimization and Applications to Operator Scaling and Invariant Theory</a></td>
-      <td><span class="new"><a href="slides-rafael2.pdf">[pdf]</a></span></td>
-    </tr>
-    <tr>
-      <td>14:45–15:20</td>
-      <td> </td>
-      <td>break</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>15:20–16:05</td>
-      <td><a href="https://www.math.ku.dk/english/staff/?pure=en/persons/475476">Matthias Christandl</a></td>
-      <td><a href="#tensors-from-entanglement-to-computational-complexity-matthias-christandl">Tensors: From Entanglement to Computational Complexity</a></td>
-      <td><span class="new"><a href="slides-matthias.pdf">[pdf]</a></span></td>
-    </tr>
-    <tr>
-      <td>16:15–17:00</td>
-      <td><a href="https://theory.epfl.ch/vishnoi/">Nisheeth Vishnoi</a></td>
-      <td><a href="#on-the-computability-of-maximum-entropy-distributions-nisheeth-vishnoi">On the Computability of Maximum Entropy Distributions</a></td>
-      <td><span class="new"><a href="slides-nisheeth.pdf">[pdf]</a></span></td>
-    </tr>
-    <tr>
-      <td>17:10–17:55</td>
-      <td><a href="mailto:a5ramachandran@uwaterloo.ca">Akshay Ramachandran</a></td>
-      <td><a href="#the-paulsen-problem-continuous-operator-scaling-and-smoothed-analysis-akshay-ramachandran">The Paulsen Problem, Continuous Operator Scaling, and Smoothed Analysis</a></td>
-      <td><span class="new"><a href="slides-akshay.pdf">[pdf]</a></span></td>
-    </tr>
-  </tbody>
-</table>
-
-<p />
 
 <h2 id="abstracts">Abstracts</h2>
 
-<h3 id="tutorials-ankit-garg-rafael-oliveira-michael-walter">Tutorials (Ankit Garg, Rafael Oliveira, Michael Walter)</h3>
+<h3 id="arkadev">Lifting Theorems via Hitting Distributions and Discrepancy (Arkadev Chattopadhyay)</h3>
 
-<p>The story starts with Sinkhorn in 1964 who studied the problem of matrix scaling, where the goal is to scale, i.e. multiply rows and columns by scalars, a non-negative matrix to a doubly stochastic one. Since Sinkhorn’s work, matrix scaling has been extensively studied and has found applications in numerous areas such as statistics, numerical linear algebra as well as theoretical computer science. Next Gurvits, in early 2000’s, generalized these ideas in several directions. One generalization was operator scaling which recently resulted in a deterministic polynomial time algorithm for the non-commutative rational identity testing problem (one other generalization was in the direction of real stable polynomials which resulted in a “proof from the book” of the Van der Waerden conjecture). It turns out these scaling problems arise naturally in the context of group actions and invariant theory which provide a further plethora of scaling problems. Some additional problems that fall under this umbrella are the so called non-uniform scaling problems which include Brascamp-Lieb inequalities, Horn’s problem, quantum marginal problem etc.
-Algorithms have been recently designed for many of these scaling problems as well. We will catch a glimpse of this exciting story.</p>
+<p>In this talk, lifting theorems will usually mean the 'lifting' of hardness of a function f in the decision-tree/query model to the hardness of F = f o g in the more powerful communication model of Yao.
+</p>
+<p> 
+Such lifting theorems have enabled the resolution of several outstanding problems recently. We will look at two properties of the gadget g that is sufficient for such lifting. One of them is special, in the sense that most functions (in the statistical sense) do not have it. On the other hand, many commonly used functions like Inner-Product, Gap-Hamming etc do possess this property. The other property is satisfied by a random function with high probability.
+</p>
+<p>
+Based on two works, the first joint with Michal Koucky, Bruno Loff and Sagnik Mukhopadhyay. The second is a more recent joint work with Yuval Filmus, Sajin Koroth, Or Meir and Toniann Pitassi.
+</p>
 
-<h3 id="geodesically-convex-optimization-and-applications-to-operator-scaling-and-invariant-theory-rafael-oliveira">Geodesically Convex Optimization and Applications to Operator Scaling and Invariant Theory (Rafael Oliveira)</h3>
+<h3 id="marc">Lifting applied to proof complexity (Marc Vinyals)</h3>
 
-<p>In this talk, we discuss a new second-order method for geodesically convex optimization problems, on the natural hyperbolic metric over positive definite matrices. This method is a geodesic generalization of the boxed-constrained Newton method used by [ALOW’17, CMTV’17] which provided faster algorithms for the matrix scaling problem. With this new technique, we obtain algorithms for the Operator Scaling problem which is polynomial in the input size and logarithmic on the error.</p>
+<p>Proof complexity has benefited from the recent developments in lifting theorems for communication complexity, and sometimes acted as a driving force towards proving new forms of lifting. In this talk we will review some recent (and not so recent) proof complexity results that were proved using lifting, and discuss possible future applications. I will not assume familiarity with proof complexity.</p>
 
-<p>As an application, we use this new  algorithm as a subroutine to solve the orbit closure intersection problem for the left-right action.</p>
+<h3 id="pritish">Monotone Circuit Lower Bounds via Query-to-Communication lifting (Pritish Kamath)</h3>
 
-<p>Joint work with Zeyuan Allen-Zhu, Ankit Garg, Yuanzhi Li and Avi Wigderson.</p>
+<p>For any unsatisfiable CNF formula F that is hard to refute in the Resolution proof system, we show that a gadget-composed version of F is hard to refute in any proof system whose lines are computed by efficient communication protocols, thereby implying lower bounds against monotone circuits. Our result extends to real communication protocols, thereby implying lower bounds against monotone real circuits and the Cutting Planes proof system. A neat instantiation of this technique shows that monotone circuits cannot perform Gaussian elimination efficiently; namely that a monotone variant of XOR-SAT has exponential monotone (real) circuit complexity. Since XOR-SAT is in NC^2, this improves qualitatively on the monotone vs. non-monotone separation of Tardos (1988).</p>
+<p>Finally, we describe an intimate connection between computational models and communication complexity analogs of the sub-classes of TFNP, the class of all efficiently verifiable total search problems. We show that the communication analog of PPA (resp. PPA_p) captures span programs over F_2 (resp. F_p, for any prime p). This complements previously known results that communication FP captures formulas (Karchmer–Wigderson, 1988) and that communication PLS captures circuits (Razborov, 1995).
+</p>
+<p>
+This talk is based on joint works with Ankit Garg, Mika Göös, Robert Robere and Dmitry Sokolov.
+ </p>
 
-<h3 id="tensors-from-entanglement-to-computational-complexity-matthias-christandl">Tensors: From Entanglement to Computational Complexity (Matthias Christandl)</h3>
+<h3 id="makrand">Lower Bounds for Extension Complexity (Makrand Sinha)</h3>
 
-<p>We wish to understand when a tensor s can be transformed into a tensor t by application of linear maps to its tensor legs (we then say s restricts to t). In the language of restrictions, the rank of a tensor t is given by the minimal size of a diagonal tensor restricting to t. The study of rank and restrictions are motivated by algebraic complexity theory, where the rank corresponds to the computational complexity of a bilinear map (e.g. matrix multiplication) which then is viewed as a tensor with three legs.</p>
+<p>In this tutorial, we will survey the recent progress in proving lower bounds on the size of linear and semidefinite programs for combinatorial optimization problems.</p>
 
-<p>Interestingly, some important open problems can be formulated in terms of asymptotic properties of restriction, among them the exponent of matrix multiplication. Following the seminal work of Volker Strassen, we will therefore study whether for large n the (n+o(n))’th tensor power of s can be restricted to the n’th tensor power of t. The information-theoretic flavor of the problem is apparent and was heavily used by Strassen in conjunction with the discovery of algebraic structures (his spectral theorem).</p>
+<p>Many combinatorial optimization problems can be naturally written down as optimizing a linear function over a polytope which is the convex hull of all feasible solutions. Typically, the natural polytopes corresponding to these problems have exponentially many facets. The notion of (linear/semidefinite) extension complexity captures what is the smallest possible linear/semidefinite program one could write down that captures these polytopes.</p>
 
-<p>Identifying k-leg-tensors with states of quantum systems of k particles allows us to bring tools and ideas from quantum information theory to the table, among them entanglement polytopes and quantum entropy. I will use these to construct a family of functionals - the quantum functionals - that can serve as obstructions to asymptotic restrictions. The functionals are the first of their kind applicable to all tensors, thereby solving a problem by Strassen from 1986.</p>
+<p>We will define the notion of extension complexity and describe how ideas from communication complexity have led to breakthroughs in proving lower bounds for many natural polytopes.</p>
 
-<p>The talk is based on joint work with Peter Vrana and Jeroen Zuiddam.</p>
+<h3 id="suhail">Lifting with XOR (Suhail Sherif)</h3>
 
-<h3 id="on-the-computability-of-maximum-entropy-distributions-nisheeth-vishnoi">On the Computability of Maximum Entropy Distributions (Nisheeth Vishnoi)</h3>
+<p>
+Given a function f taking n bits as input, a natural communication variant of it is the function f composed with XOR, denoted f o XOR.
+Such 'XOR functions' have a lot of structure and have been the subject of a lot of fruitful research. Various measures of f, such as its Fourier sparsity, lift to measures of f o XOR, such as its rank.
+</p>
 
-<p>This talk is about the problem of computing the maximum entropy
-distribution with a specified expectation vector over a discrete
-domain. This problem arises and has found numerous applications in
-economics, machine learning and various sub-disciplines of mathematics
-and computer science. A key question related to the computability of
-maximum entropy distributions, when the domain is large or implicitly
-specified, is whether they have succinct descriptions (polynomial-size
-in the input description).</p>
+<p>
+In this talk, we will look at some ways in which f relates to f o XOR.
+Along the way, we will see that approximate rank does not characterize randomized communication complexity, falsifying the Log-Approximate-Rank Conjecture. We will conclude with some open questions.
+</p>
 
-<p>I will present a resolution of this question: a polynomial bound on
-the bit complexity of near-optimal dual solutions to the maximum
-entropy convex program – with no restriction on the expectation vector
-or on the cardinality of the domain. An application of this result –
-a polynomial time algorithm to compute the Brascamp-Lieb constant in
-the rank one case – will also be presented.</p>
-
-<p>Based on a joint work with Damian Straszak (<a href="https://arxiv.org/abs/1711.02036">arXiv:1711.02036</a>).</p>
-
-<h3 id="the-paulsen-problem-continuous-operator-scaling-and-smoothed-analysis-akshay-ramachandran">The Paulsen Problem, Continuous Operator Scaling, and Smoothed Analysis (Akshay Ramachandran)</h3>
-
-<p>The Paulsen problem is a basic open problem in operator theory: Given vectors u_1,…,u_n ∈ ℝ^d that are ϵ-nearly satisfying the Parseval’s condition and the equal norm condition, is it close to a set of vectors v_1,…,v_n ∈ ℝ^d that exactly satisfy the Parseval’s condition and the equal norm condition? Given u_1,…,u_n, the squared distance (to the set of exact solutions) is defined as inf ∑‖u_i−v_i‖^2_2 where the infimum is over the set of exact solutions. Previous results show that the squared distance of any ϵ-nearly solution is at most O(poly(d,n,ϵ)) and there are ϵ-nearly solutions with squared distance at least Ω(dϵ). The fundamental open question is whether the squared distance can be independent of the number of vectors n.
-We answer this question affirmatively by proving that the squared distance of any ϵ-nearly solution is O(d^13/2ϵ). Our approach is based on a continuous version of the operator scaling algorithm and consists of two parts. First, we define a dynamical system based on operator scaling and use it to prove that the squared distance of any ϵ-nearly solution is O(d^2n/ϵ). Then, we show that by randomly perturbing the input vectors, the dynamical system will converge faster and the squared distance of an ϵ-nearly solution is O(d^5/2ϵ) when n is large enough and ϵ is small enough. To analyze the convergence of the dynamical system, we develop some new techniques in lower bounding the operator capacity, a concept introduced by Gurvits to analyze the operator scaling algorithm.</p>
-
+<p>
+This work was done in collaboration with Arkadev Chattopadhyay and Nikhil Mande.
+</p>
 
       </div>
     </div>
