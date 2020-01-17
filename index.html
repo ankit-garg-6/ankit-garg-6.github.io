@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Extension complexity and lifting theorems (FSTTCS 2019 Workshop)</title>
+  <meta name="description" content="Communication Complexity">
+
+  <link rel="stylesheet" href="./main.css" type="text/css" />
+  <link rel="canonical" href="https://ankit-garg-6.github.io/fsttcs19lifting/">
+  <link rel="alternate" type="application/rss+xml" title="Ankit Garg" href="https://ankit-garg-6.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="extension-complexity-and-lifting-theorems">Extension complexity and lifting theorems</h1>
+
+<p><a href="https://www.fsttcs.org.in/2019/">FSTTCS2019</a> Workshop. December 14, 2019. Location: <strong>  Institute Lecture Hall Complex (LHC) </strong> LH 101, IIT Bombay. More information about how to reach the venue can be found <a href="https://www.cse.iitb.ac.in/~fsttcs2019/#venue"> here </a>.
+
+<p><strong>Organizers:</strong> <a href="https://ankit-garg-6.github.io/">Ankit Garg</a>, <a href="https://raghumeka.github.io/">Raghu Meka</a>, <a href="https://www.cs.toronto.edu/~toni/">Toniann Pitassi</a>, <a href="https://www.cwi.nl/people/makrand-sinha">Makrand Sinha</a></p>
+
+<p><strong>Invited Speakers:</strong> <a href="https://www.tcs.tifr.res.in/~arkadev/">Arkadev Chattopadhyay</a>, <a href="https://pritishkamath.github.io/">Pritish Kamath</a>, <a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a>, <a href="https://www.tcs.tifr.res.in/~suhail-sherif/">Suhail Sherif</a>, <a href="http://www.csc.kth.se/~vinyals/">Marc Vinyals</a></p>
+
+<p>Questions? Send an email to <a href="mailto:garga@microsoft.com">Ankit</a>, <a href="mailto:raghuvardhan@gmail.com">Raghu</a>, <a href="mailto:tonipitassi@gmail.com">Toni</a> or <a href="mailto:Makrand.Sinha@cwi.nl">Makrand</a>.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p align="center"><img width="50%" src="logo.jpg" /></p>
+
+<p>The workshop will focus on two exciting subareas of communication complexity where a lot of progress has been made in the past few years: extension complexity and lifting theorems. Extension complexity is an exciting area at the intersection of combinatorial optimization and communication complexity. The area studies the sizes of the smallest (LP or SDP or more generally convex) extensions of polytopes and the techniques used share a lot in common with communication complexity. Another hot topic in communication complexity nowadays is the study of lifting theorems: lifting hardness from simpler models (usually in query complexity) to more complex models (usually in communication complexity). Such lifting theorems are now known for various models including the ones arising in extension complexity. The workshop will focus on classical results as well as recent progress.</p>
+
+<h2 id="schedule">Schedule</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>      Time      </th>
+      <th>          Speaker          </th>
+      <th>Title</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:50–9:00</td>
+      <td> </td>
+      <td>Welcome &amp; overview</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>9:00–10:00</td>
+      <td><a href="https://www.tcs.tifr.res.in/~arkadev/">Arkadev Chattopadhyay</a></td>
+      <td><a href="#arkadev">Lifting Theorems via Hitting Distributions and Discrepancy</a></td>
+    </tr>
+    <tr>
+      <td>10:00–11:00</td>
+      <td><a href="http://www.csc.kth.se/~vinyals/">Marc Vinyals</a></td>
+      <td><a href="#marc">Lifting applied to proof complexity</a></td>
+      <td><span class="new"><a href="LiftingFSTTCS19_marc.pdf">[slides]</a></span></td>
+    </tr>
+    <tr>
+      <td>11:00–11:30</td>
+      <td> </td>
+      <td>Tea/Coffee Break</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>11:30–12:30</td>
+      <td><a href="https://pritishkamath.github.io/">Pritish Kamath</a></td>
+      <td><a href="#pritish">Monotone Circuit Lower Bounds via Query-to-Communication lifting</a></td>
+      <td><span class="new"><a href="FSTTCS19_pritish.pdf">[slides]</a></span></td>
+    </tr>	
+    <tr>
+      <td>12:30–14:00</td>
+      <td> </td>
+      <td>Lunch Break</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>14:00–15:00</td>
+      <td><a href="https://www.cwi.nl/people/makrand-sinha">Makrand Sinha</a></td>
+      <td><a href="#makrand">Lower Bounds for Extension Complexity</a></td>
+    </tr>
+    <tr>
+      <td>15:00–16:00</td>
+      <td><a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a></td>
+      <td><a href="#pravesh">Approximate Constraint Satisfaction Requires Sub-exponential Size Linear Programs</a></td>
+    </tr>
+    <tr>
+      <td>16:00–16:30</td>
+      <td> </td>
+      <td>Tea/Coffee Break</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>16:30–17:30</td>
+      <td><a href="https://www.tcs.tifr.res.in/~suhail-sherif/">Suhail Sherif</a></td>
+      <td><a href="#suhail">Lifting with XOR</a></td>
+      <td><span class="new"><a href="LiftingWithXOR.pdf">[slides]</a></span></td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+
+<p />
+
+
+<h2 id="abstracts">Abstracts</h2>
+
+<h3 id="arkadev">Lifting Theorems via Hitting Distributions and Discrepancy (Arkadev Chattopadhyay)</h3>
+
+<p>In this talk, lifting theorems will usually mean the 'lifting' of hardness of a function f in the decision-tree/query model to the hardness of F = f o g in the more powerful communication model of Yao.
+</p>
+<p> 
+Such lifting theorems have enabled the resolution of several outstanding problems recently. We will look at two properties of the gadget g that is sufficient for such lifting. One of them is special, in the sense that most functions (in the statistical sense) do not have it. On the other hand, many commonly used functions like Inner-Product, Gap-Hamming etc do possess this property. The other property is satisfied by a random function with high probability.
+</p>
+<p>
+Based on two works, the first joint with Michal Koucky, Bruno Loff and Sagnik Mukhopadhyay. The second is a more recent joint work with Yuval Filmus, Sajin Koroth, Or Meir and Toniann Pitassi.
+</p>
+
+<h3 id="marc">Lifting applied to proof complexity (Marc Vinyals)</h3>
+
+<p>Proof complexity has benefited from the recent developments in lifting theorems for communication complexity, and sometimes acted as a driving force towards proving new forms of lifting. In this talk we will review some recent (and not so recent) proof complexity results that were proved using lifting, and discuss possible future applications. I will not assume familiarity with proof complexity.</p>
+
+<h3 id="pritish">Monotone Circuit Lower Bounds via Query-to-Communication lifting (Pritish Kamath)</h3>
+
+<p>For any unsatisfiable CNF formula F that is hard to refute in the Resolution proof system, we show that a gadget-composed version of F is hard to refute in any proof system whose lines are computed by efficient communication protocols, thereby implying lower bounds against monotone circuits. Our result extends to real communication protocols, thereby implying lower bounds against monotone real circuits and the Cutting Planes proof system. A neat instantiation of this technique shows that monotone circuits cannot perform Gaussian elimination efficiently; namely that a monotone variant of XOR-SAT has exponential monotone (real) circuit complexity. Since XOR-SAT is in NC^2, this improves qualitatively on the monotone vs. non-monotone separation of Tardos (1988).</p>
+<p>Finally, we describe an intimate connection between computational models and communication complexity analogs of the sub-classes of TFNP, the class of all efficiently verifiable total search problems. We show that the communication analog of PPA (resp. PPA_p) captures span programs over F_2 (resp. F_p, for any prime p). This complements previously known results that communication FP captures formulas (Karchmer–Wigderson, 1988) and that communication PLS captures circuits (Razborov, 1995).
+</p>
+<p>
+This talk is based on joint works with Ankit Garg, Mika Göös, Robert Robere and Dmitry Sokolov.
+ </p>
+
+<h3 id="makrand">Lower Bounds for Extension Complexity (Makrand Sinha)</h3>
+
+<p>In this tutorial, we will survey the recent progress in proving lower bounds on the size of linear and semidefinite programs for combinatorial optimization problems.</p>
+
+<p>Many combinatorial optimization problems can be naturally written down as optimizing a linear function over a polytope which is the convex hull of all feasible solutions. Typically, the natural polytopes corresponding to these problems have exponentially many facets. The notion of (linear/semidefinite) extension complexity captures what is the smallest possible linear/semidefinite program one could write down that captures these polytopes.</p>
+
+<p>We will define the notion of extension complexity and describe how ideas from communication complexity have led to breakthroughs in proving lower bounds for many natural polytopes.</p>
+
+<h3 id="pravesh">Approximate Constraint Satisfaction Requires Sub-exponential Size Linear Programs (Pravesh Kothari)</h3>
+
+<p>
+Abstract: We show that for constraint satisfaction problems (CSPs), sub-exponential size linear programming relaxations are as powerful as n^{\Omega(1)}-rounds of the Sherali-Adams linear programming hierarchy. As a corollary, we obtain sub-exponential size lower bounds for linear programming relaxations that beat random guessing for many CSPs such as MAX-CUT and MAX-3SAT. This is a nearly-exponential improvement over previous results; previously, it was only known that linear programs of size ~n^{(log n)} cannot beat random guessing for any CSP [Chan-Lee-Raghavendra-Steurer 2013].
+</p>
+
+<p>
+Our bounds are obtained by exploiting and extending the recent progress in communication complexity for "lifting" query lower bounds to communication problems. The main ingredient in our results is a new structural result on “high-entropy rectangles” that may of independent interest in communication complexity.
+</p>
+
+<p>
+Based on joint work with Raghu Meka and Prasad Raghavendra.
+</p>
+
+
+<h3 id="suhail">Lifting with XOR (Suhail Sherif)</h3>
+
+<p>
+Given a function f taking n bits as input, a natural communication variant of it is the function f composed with XOR, denoted f o XOR.
+Such 'XOR functions' have a lot of structure and have been the subject of a lot of fruitful research. Various measures of f, such as its Fourier sparsity, lift to measures of f o XOR, such as its rank.
+</p>
+
+<p>
+In this talk, we will look at some ways in which f relates to f o XOR.
+Along the way, we will see that approximate rank does not characterize randomized communication complexity, falsifying the Log-Approximate-Rank Conjecture. We will conclude with some open questions.
+</p>
+
+<p>
+This work was done in collaboration with Arkadev Chattopadhyay and Nikhil Mande.
+</p>
+
+      </div>
+    </div>
+
+    <!--
+<footer class="site-footer">
+</footer>
+-->
+
+
+  </body>
+
+</html>
